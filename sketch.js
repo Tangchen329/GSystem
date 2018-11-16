@@ -46,8 +46,8 @@ function drawGradient(){
 	var intervalR = (endR - startR)/steps;//每个圆的半径
 	
 	var gradientcolor=[];
-	var from =color (random(255),random(255),random(255));
-	var to = color(random(255),random(255),random(255));
+	var from =color (random(255)/255,random(255)/255,random(255)/255);
+	var to = color(random(255)/255,random(255)/255,random(255)/255);
 	
 	for(var i=0;i<steps-2;i++){
 		gradientcolor[i] = lerpColor(from, to, i/(steps-2));
