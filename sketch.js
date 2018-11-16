@@ -48,8 +48,8 @@ function drawGradient(){
 	
 	var gradientcolor=[];
 	
-	var from =color(123,143,4);
-	var to = color(4,134,221);
+	var from =color(12,13,4);
+	var to = color(4,14,21);
 	
 	for(var i=0;i<steps-2;i++){
 		gradientcolor[i] = lerpColor(from, to, i/(steps-2));
