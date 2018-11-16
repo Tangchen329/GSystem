@@ -46,7 +46,7 @@ function drawGradient(){
 	var intervalR = (endR - startR)/steps;//每个圆的半径
 	
 	var gradientcolor=[];
-	var from =color (123,143,4);
+	var from =color(123,143,4);
 	var to = color(4,134,221);
 	
 	for(var i=0;i<steps-2;i++){
