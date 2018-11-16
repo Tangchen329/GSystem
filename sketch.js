@@ -26,7 +26,7 @@ var radio;
 
 function setup() {
 	
-	radio = createRadio();
+  radio = createRadio();
   radio.option('1 喜悦 ',1);
   radio.option('2 惊奇',2);
   radio.option('3 轻松',3);
