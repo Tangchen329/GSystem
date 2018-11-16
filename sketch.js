@@ -22,38 +22,19 @@ var startX = 400;//让启始圆横向距离画布边缘空开20
 var startY = 500;//让启始圆纵向上距离画布20-200之间
 var endX = 400;//终点圆横向上距离边缘20
 var endY = 200;//
-var radio;
+
 
 function setup() {
-	
-  //radio = createRadio();
-  //radio.option('1 喜悦 ',1);
-  //radio.option('2 惊奇',2);
-  //radio.option('3 轻松',3);
-  //radio.option('4 冷漠 ',4);
-  //radio.option('5 反感',5);
-  //radio.option('6 恐惧',6);
-  //radio.option('7 气愤 ',7);
-  //radio.option('8 焦虑',8);
-  //radio.option('9 悲伤',9);
-  //radio.style('width', '80px');
-  //textAlign(CENTER);
+	 
   //createCanvas(800, 800);
 }
 
 function draw() {
   background(255);
 	fill(0);
-	//画radio
-	//var val = radio.value();
- // if (val) {
-    //text(val,300, 100);
-    //resetHyperValues();
-  if(mousePressed ){
-    drawGradient();}
+  if(mousePressed ){drawGradient();}
     
   //}
-	//画radio
 	
 }
 
