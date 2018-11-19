@@ -82,7 +82,7 @@ function RandomColor3 () {
  
     //随机颜色返回的是一个0.5到1 的两位小数;如果生成的0-1就直接是const a =Math.random()
  
-    const color = rgb(${r},${g},${b});
+    const color = rgb(r,g,b);
  
     //console.log(color)
  
