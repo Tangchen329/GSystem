@@ -14,7 +14,7 @@
 
 
 //}
-colorMode(RGB,255);
+//colorMode(RGB,255);
 var steps=200;
 var colornum = 3;
 var startR = 300;//启始圆的半径 *
