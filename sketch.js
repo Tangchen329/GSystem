@@ -48,8 +48,8 @@ function drawGradient(){
 	
 	var gradientcolor=[];
 	colorMode(RGB,255);
-	var from =color(12,13,4);
-	var to = color(4,14,21);
+	var from =RandomColor3(12,13,4);
+	var to = RandomColor3(4,14,21);
 	
 	for(var i=0;i<steps-2;i++){
 		gradientcolor[i] = lerpColor(from, to, i/(steps-2));
@@ -70,6 +70,24 @@ function drawGradient(){
 function mousePressed(){
 
    drawGradient();}
+
+
+function RandomColor3 () {
+ 
+    const r = Math.round(Math.random()*255);
+ 
+    const g = Math.round(Math.random()*255);
+ 
+    const b = Math.round(Math.random()*255);
+ 
+    //随机颜色返回的是一个0.5到1 的两位小数;如果生成的0-1就直接是const a =Math.random()
+ 
+    const color = `rgba(${r},${g},${b})`
+ 
+    console.log(color)
+ 
+    return color
+ 
 
 
 
