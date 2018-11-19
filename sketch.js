@@ -84,7 +84,7 @@ function RandomColor3 () {
  
     const color = `rgba(${r},${g},${b})`
  
-    console.log(color)
+    //console.log(color)
  
     return color
  
