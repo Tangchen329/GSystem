@@ -86,7 +86,8 @@ function RandomColor3 () {
  
     //console.log(color)
  
-    return color;}
+    return color;
+}
  
 
 
