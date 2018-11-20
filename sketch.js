@@ -26,7 +26,18 @@ var endY = 200;//
 
 
 function setup() {
-	 
+radio = createRadio();
+  radio.option('1 喜悦 ',1);
+  radio.option('2 惊奇',2);
+  radio.option('3 轻松',3);
+  radio.option('4 冷漠 ',4);
+  radio.option('5 反感',5);
+  radio.option('6 恐惧',6);
+  radio.option('7 气愤 ',7);
+  radio.option('8 焦虑',8);
+  radio.option('9 悲伤',9);
+  radio.style('width', '80px');
+  textAlign(CENTER);	 
   createCanvas(800, 800);
 }
 
