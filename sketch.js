@@ -23,29 +23,29 @@ var startX = 400;//让启始圆横向距离画布边缘空开20
 var startY = 500;//让启始圆纵向上距离画布20-200之间
 var endX = 400;//终点圆横向上距离边缘20
 var endY = 200;//
-var radio;
+//var radio;
 
 function setup() {
-	radio = createRadio();
-  	radio.option('0 喜悦',0);
-  	radio.option('1 惊奇',1);
-  	radio.option('2 轻松',2);
-  	radio.option('3 冷漠',3);
-  	radio.option('4 反感',4);
-  	radio.option('5 恐惧',5);
-  	radio.option('6 气愤',6);
-  	radio.option('7 焦虑',7);
-  	radio.option('8 悲伤',8);
-  	radio.style('width', '80px');
-  	textAlign(CENTER);	 
+	//radio = createRadio();
+  	//radio.option('0 喜悦',0);
+  	//radio.option('1 惊奇',1);
+  	//radio.option('2 轻松',2);
+  	//radio.option('3 冷漠',3);
+  	//radio.option('4 反感',4);
+  	//radio.option('5 恐惧',5);
+  	//radio.option('6 气愤',6);
+  	//radio.option('7 焦虑',7);
+  	//radio.option('8 悲伤',8);
+  	//radio.style('width', '80px');
+  	//textAlign(CENTER);	 
   	createCanvas(800, 800);
 }
 
 function draw() {
 	background(255);
-	var chosen = radio.value();
-	fill(0);
-	text("choosen" + chosen,width/2,height/2);
+	//var chosen = radio.value();
+	//fill(0);
+	//text("choosen" + chosen,width/2,height/2);
 	fill(0);
 	noStroke();
 	if(mousePressed ){drawGradient();}
