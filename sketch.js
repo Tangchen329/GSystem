@@ -27,15 +27,15 @@ var radio;
 
 function setup() {
 	radio = createRadio();
-  	radio.option('1 喜悦 ',1);
-  	radio.option('2 惊奇',2);
-  	radio.option('3 轻松',3);
-  	radio.option('4 冷漠 ',4);
-  	radio.option('5 反感',5);
-  	radio.option('6 恐惧',6);
-  	radio.option('7 气愤 ',7);
-  	radio.option('8 焦虑',8);
-  	radio.option('9 悲伤',9);
+  	radio.option('0 喜悦',0);
+  	radio.option('1 惊奇',1);
+  	radio.option('2 轻松',2);
+  	radio.option('3 冷漠',3);
+  	radio.option('4 反感',4);
+  	radio.option('5 恐惧',5);
+  	radio.option('6 气愤',6);
+  	radio.option('7 焦虑',7);
+  	radio.option('8 悲伤',8);
   	radio.style('width', '80px');
   	textAlign(CENTER);	 
   	createCanvas(800, 800);
