@@ -48,8 +48,8 @@ function drawGradient(){
 	
 	var gradientcolor=[];
 	colorMode(RGB,255);
-	var from =(random(255),random(255),random(255));
-	var to =(random(255),random(255),random(255));
+	var from =color(random(255),random(255),random(255));
+	var to =color(random(255),random(255),random(255));
 	
 	for(var i=0;i<steps-2;i++){
 		gradientcolor[i] = lerpColor(from, to, i/(steps-2));
