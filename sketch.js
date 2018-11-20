@@ -23,7 +23,7 @@ var startX = 400;//让启始圆横向距离画布边缘空开20
 var startY = 500;//让启始圆纵向上距离画布20-200之间
 var endX = 400;//终点圆横向上距离边缘20
 var endY = 200;//
-
+var radio;
 
 function setup() {
 radio = createRadio();
