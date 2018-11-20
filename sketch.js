@@ -72,23 +72,6 @@ function mousePressed(){
    drawGradient();}
 
 
-//function RandomColor3 () {
- 
-    //var r = Math.round(Math.random()*255);
- 
-    //var g = Math.round(Math.random()*255);
- 
-    //var b = Math.round(Math.random()*255);
- 
-    //随机颜色返回的是一个0.5到1 的两位小数;如果生成的0-1就直接是const a =Math.random()
- 
-    //var color = rgb(r,g,b);
- 
-    //console.log(color)
- 
-   // return color;
-//}
- 
 
 
 
