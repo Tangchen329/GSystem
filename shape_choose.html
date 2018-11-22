@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style type="text/css">
+        p {letter-spacing: 0.5em ; text-align: center} 
+
+        #circle{
+            width: 11px;
+            height: 11px;
+            border-radius: 11px;
+            margin:auto;
+            background-color:#000;
+            border: solid 0px;
+            position: absolute;
+            left: 820px;
+            top: 40px;
+            
+        }
+        #line{
+            width:818px; 
+            height:40px; 
+            border-right:1px dashed #000;           
+        }
+
+        #shape{
+            float:left;
+            margin : 150px 0px 80px 290px;
+            
+        }
+
+        #arrowline-left{
+        position: absolute;
+        top: 400px;
+        left: 40px;
+        width:12px;
+        height:4px;
+        background-color:black;
+        }
+
+       #arrowline-right{
+        position: absolute;
+        top: 400px;
+        right: 40px;
+        width:12px;
+        height:4px;
+        background-color:black;
+        }
+    
+
+        .left-arrow
+		{ position: absolute;
+        top: 375px;
+        left: 20px;
+			border-style: solid;
+			width: 0px;  
+			height: 0px;  
+                	border-width: 10px;  
+			border-color: transparent black transparent transparent;   
+		}
+
+        .right-arrow
+			{       position: absolute;
+                                top: 375px;
+                                right: 20px;
+
+				border-style: solid;
+				width: 0px;  
+				height: 0px;  
+				border-width: 10px;  
+				border-color: transparent transparent transparent black;   
+			}
+
+        #arrowline-right:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.8),0 20px 70px 0 rgba(0, 0, 0, 0.8);
+                        }
+                        
+        #arrowline-left:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.8),0 20px 70px 0 rgba(0, 0, 0, 0.8);
+                        }
+       
+        </style>
+
+
+</head>
+<body>
+       <div id="line"></div>
+        <div id="circle"></div>
+        <p>选择一个你喜欢的形状吧～</p>
+
+
+
+        <div id="shape" class="shape_a">
+                
+            <img src="https://github.com/Tangchen329/GSystem/blob/gh-pages/Resources/shape_a.png?raw=true" />
+            <p>形状A</p>
+        </div>
+        <div id="shape" class="shape_b">
+                
+            <img src="https://github.com/Tangchen329/GSystem/blob/gh-pages/Resources/shape_b.png?raw=true"/>
+            <p>形状B</p>
+        </div>
+        <div id="shape" class="shape_c">
+                
+            <img src="https://github.com/Tangchen329/GSystem/blob/gh-pages/Resources/shape_c.png?raw=true" />
+            <p>形状C</p>
+        </div>
+       
+
+        <div class="arrow_left"><a href="http://www.runoob.com/html/html-tutorial.html">
+            <p class="left-arrow"></p>
+            <div id="arrowline-left"></div> </a> 
+        </div>
+
+       <div class="arrow_right"><a href="http://www.runoob.com/html/html-tutorial.html">
+            <p class="right-arrow"></p>
+            <div id="arrowline-right"></div></a>  
+    </div>
+        
+    
+</body>
+</html>
