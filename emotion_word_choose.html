@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+
+
+
+    
+    <style type="text/css">
+        p{letter-spacing: 0.5em ; text-align: center; } 
+
+        #circle1{
+            width: 11px;
+            height: 11px;
+            border-radius: 11px;
+            margin:auto;
+            background-color:#000;
+            border: solid 0px;
+            position: absolute;
+            left: 840px;
+            top: 40px;
+            
+        }
+        #line{
+            width:838px; 
+            height:40px; 
+            border-right:1px dashed #000;              
+        }
+
+        #circle_1,#circle_2,#circle_3,#circle_4,#circle_5,#circle_6,#circle_7,#circle_8,#circle_9{
+            width: 160px;
+            height: 160px;
+            float:right;
+            border-radius: 150px;
+            
+            background-color: white;
+            border: solid 3px;  
+            margin:10px 25px 40px 25px; 
+        }
+       
+        p.emotion1,p.emotion2,p.emotion3,p.emotion4,p.emotion5,p.emotion6,p.emotion7,p.emotion8,p.emotion9{
+            text-align:center;
+            line-height:120px;
+            font-size:24px; 
+            letter-spacing: 0em ;
+            }
+
+        #circle_all{
+            float:center;
+            margin:80px 500px 20px 500px;
+        }
+        #arrowline-left{
+        position: absolute;
+        top: 400px;
+        left: 40px;
+        width:12px;
+        height:4px;
+        background-color:black;
+        }
+
+       #arrowline-right{
+        position: absolute;
+        top: 400px;
+        right: 40px;
+        width:12px;
+        height:4px;
+        background-color:black;
+        }
+    
+
+        .left-arrow
+		{       position: absolute;
+        top: 375px;
+        left: 20px;
+			border-style: solid;
+			width: 0px;  
+			height: 0px;  
+                	border-width: 10px;  
+			border-color: transparent black transparent transparent;   
+		}
+
+        .right-arrow
+			{       position: absolute;
+                                top: 375px;
+                                right: 20px;
+
+				border-style: solid;
+				width: 0px;  
+				height: 0px;  
+				border-width: 10px;  
+				border-color: transparent transparent transparent black;   
+			}
+        #arrowline-right:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.8),0 20px 70px 0 rgba(0, 0, 0, 0.8);
+                        }
+        #arrowline-left:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.8),0 20px 70px 0 rgba(0, 0, 0, 0.8);
+                        }
+        #circle_9:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        #circle_8:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        #circle_7:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+
+        #circle_6:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        #circle_5:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        #circle_4:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        #circle_3:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+
+        #circle_2:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        #circle_1:hover {
+        box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2),0 20px 70px 0 rgba(0, 0, 0, 0.2);
+                        }
+        </style>
+</head>
+<body>
+        <div id="line"></div>
+        <div id="circle1"></div>   
+       
+        <p>选择一个你的情绪关键词</p>
+    
+        <div id = "circle_all">
+        <div id = "circle_1">
+            <p class="emotion1">喜悦</p>
+        </div>
+        <div id = "circle_2">
+                <p class="emotion2">惊奇</p>
+         </div>
+        <div id = "circle_3">
+                <p class="emotion3">轻松</p>
+        </div>
+        <div id = "circle_4">
+             <p class="emotion4">冷漠</p>
+        </div>
+        <div id = "circle_5">
+                <p class="emotion5">反感</p>
+        </div>
+        <div id = "circle_6">
+                <p class="emotion6">恐惧</p>
+        </div>
+        <div id = "circle_7">
+                <p class="emotion7">气愤</p>
+        </div>
+        <div id = "circle_8">
+                <p class="emotion8">焦虑</p>
+        </div>
+        <div id = "circle_9">
+                <p class="emotion9">悲伤</p>
+        </div>
+       </div>
+       
+       <div class="arrow_left"><a href="http://www.runoob.com/html/html-tutorial.html">
+            <p class="left-arrow"></p>
+            <div id="arrowline-left"></div> </a> 
+        </div>
+
+       <div class="arrow_right"><a href="https://tangchen329.github.io/GSystem/index.html">
+            <p class="right-arrow"></p>
+            <div id="arrowline-right"></div></a>  
+    </div>
+        
+    <script>
+    $("#circle_1").hover(
+    function(){
+        
+        $("#circle_1").css("background-color","black");
+        $("p.emotion1").css("color","white");
+    },
+    function(){
+        $("#circle_1").css("background-color","white");
+        $(".emotion1").css("color","black");
+    }
+    );
+
+    $("#circle_2").hover(
+    function(){
+        
+        $("#circle_2").css("background-color","black");
+        $(".emotion2").css("color","white");
+    },
+    function(){
+        $("#circle_2").css("background-color","white");
+        $(".emotion2").css("color","black");
+    }
+    );
+
+    $("#circle_3").hover(
+    function(){
+        
+        $("#circle_3").css("background-color","black");
+        $(".emotion3").css("color","white");
+    },
+    function(){
+        $("#circle_3").css("background-color","white");
+        $(".emotion3").css("color","black");
+    }
+    );
+
+    $("#circle_4").hover(
+    function(){
+        
+        $("#circle_4").css("background-color","black");
+        $(".emotion4").css("color","white");
+    },
+    function(){
+        $("#circle_4").css("background-color","white");
+        $(".emotion4").css("color","black");
+    }
+    );
+
+    $("#circle_5").hover(
+    function(){
+        
+        $("#circle_5").css("background-color","black");
+        $(".emotion5").css("color","white");
+    },
+    function(){
+        $("#circle_5").css("background-color","white");
+        $(".emotion5").css("color","black");
+    }
+    );
+
+
+    $("#circle_6").hover(
+    function(){
+        
+        $("#circle_6").css("background-color","black");
+        $(".emotion6").css("color","white");
+    },
+    function(){
+        $("#circle_6").css("background-color","white");
+        $(".emotion6").css("color","black");
+    }
+    );
+
+    $("#circle_7").hover(
+    function(){
+        
+        $("#circle_7").css("background-color","black");
+        $(".emotion7").css("color","white");
+    },
+    function(){
+        $("#circle_7").css("background-color","white");
+        $(".emotion7").css("color","black");
+    }
+    );
+
+    $("#circle_8").hover(
+    function(){
+        
+        $("#circle_8").css("background-color","black");
+        $(".emotion8").css("color","white");
+    },
+    function(){
+        $("#circle_8").css("background-color","white");
+        $(".emotion8").css("color","black");
+    }
+    );
+
+    $("#circle_9").hover(
+    function(){
+        
+        $("#circle_9").css("background-color","black");
+        $(".emotion9").css("color","white");
+    },
+    function(){
+        $("#circle_9").css("background-color","white");
+        $(".emotion9").css("color","black");
+    }
+    );
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
